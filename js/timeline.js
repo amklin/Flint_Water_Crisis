@@ -1,33 +1,41 @@
 var timelineSwiper = new Swiper('.swiper', {
   direction: 'vertical',
   loop: false,
-  speed: 1600,
+  speed: 1200,
 
-  // If we need pagination
+  //pagination
   pagination: {
     el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 5,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  //scrollbar
+  mousewheel: {
+    sensitivity: 10,
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  // keyboard controls
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
   },
-  
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 5,
+    depth: 100,
+    modifier: 0.5,
+    slideShadows: false,
+  },
+
+  /*
   paginationBulletRender: function (swiper, index, className) {
     var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
     return '<span class="' + className + '">' + year + '</span>';
   },
-  
-  paginationClickable: true,
-  breakpoints: {
-    768: {
-      direction: 'horizontal',
-    }
-  }
+  */
+  centeredSlides: true,
 });
