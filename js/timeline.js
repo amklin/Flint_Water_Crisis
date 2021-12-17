@@ -1,3 +1,5 @@
+var menu = ['2014', '2015', '2016', '2017']
+
 var timelineSwiper = new Swiper('.swiper', {
   direction: 'vertical',
   loop: false,
@@ -10,6 +12,9 @@ var timelineSwiper = new Swiper('.swiper', {
     clickable: true,
     dynamicBullets: true,
     dynamicMainBullets: 5,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (menu[index]) + '</span>';
+    },
   },
 
   //scrollbar
@@ -23,6 +28,7 @@ var timelineSwiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 
+  // transition effects
   effect: 'coverflow',
   coverflowEffect: {
     rotate: 5,
