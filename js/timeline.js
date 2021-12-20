@@ -1,4 +1,4 @@
-var menu = ['2014', '2015', '2016', '2017']
+var menu = ['2014', 'Sept 2015', '2016', '2017'] //timeline dates
 
 var timelineSwiper = new Swiper('.swiper', {
   direction: 'vertical',
@@ -11,9 +11,9 @@ var timelineSwiper = new Swiper('.swiper', {
     type: 'bullets',
     clickable: true,
     dynamicBullets: true,
-    dynamicMainBullets: 5,
+    dynamicMainBullets: 1,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (menu[index]) + '</span>';
+      return '<span class="' + className + '">' + (menu[index]) + '</span><br>';
     },
   },
 
@@ -35,6 +35,7 @@ var timelineSwiper = new Swiper('.swiper', {
     depth: 100,
     modifier: 0.5,
     slideShadows: false,
+    stretch: 2,
   },
 
   /*
