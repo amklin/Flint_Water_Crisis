@@ -3,11 +3,15 @@ $(document).ready(function () {
     $(window).scroll(() => {
         /*Gets height of title and amount scrolled*/
         var scrollTop = $(window).scrollTop();
-        var height = $('#title').height();
+        var height = $('.title').height();
+        var height2 = $('.title-2').height();
 
         /*Title gradually fades out and eventually fully disappears*/
-        $('#title').css({
-            'opacity': (((1.5 * height) - scrollTop) / (1.5 * height))
+        $('.title').css({
+            'opacity': (((2.5 * height) - scrollTop) / (2.5 * height))
+        });
+        $('.title-2').css({
+            'opacity': (((.7 * height) - scrollTop) / (.7 * height))
         });
     });
 
@@ -105,10 +109,15 @@ $(document).ready(function () {
     /*Carousels*/
 
     /*Initialize carousel with Materialize function*/
-    $('.carousel').carousel();
+    //$('.carousel').carousel();
+
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
 
     /*Carousel shifts automatically every 1000 milliseconds (10 seconds)*/
-    autoplay();
+    //autoplay();
     function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, 10000);
@@ -121,6 +130,9 @@ $(document).ready(function () {
     carouselButton('#right-1', '.mental-health', 'next');  //Mental health carousel right button
     carouselButton('#left-2', '.therapy-games', 'prev');  //Therapy games carousel left button
     carouselButton('#right-2', '.therapy-games', 'next');  //Therapy games carousel right button
+
+    carouselButton('#left-3', '.solutions', 'prev');  //Therapy games carousel left button
+    carouselButton('#right-3', '.solutions', 'next');  //Therapy games carousel right button
 
     /*Function for shifting carousel*/
     function carouselButton(button, carousel, movement) {
