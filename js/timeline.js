@@ -12,7 +12,7 @@ var timelineSwiper = new Swiper('.swiper', {
     dynamicMainBullets: 1,
     renderBullet: function (index, className) {
       var date = document.getElementsByClassName('timeline-year')[index].textContent; //retrieves dates based on html content
-      return '<span class="' + className + '">' + date + '</span><br>';
+      return '<span class="' + className + '">' + date + '</span>';
     },
   },
 

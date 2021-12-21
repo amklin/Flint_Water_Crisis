@@ -680,17 +680,16 @@ h4 {
 .swiper-pagination {
     flex-direction: column;
     justify-content: center;
-    width: 500px !important;
+    width: 250px !important;
     height: 100% !important; 
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 
 .swiper-pagination-bullet {
-    
+
     width: 250px !important;
-    height: 40px !important;
-    
+    height: 36px !important;
     font-style: italic;
     text-align: center;
     font-size: 36px;
