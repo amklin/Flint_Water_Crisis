@@ -680,20 +680,20 @@ h4 {
 .swiper-pagination {
     flex-direction: column;
     justify-content: center;
-    width: 50rem !important;
+    width: 500px !important;
     height: 100% !important; 
+    margin-top: 50px;
 }
 
 
 .swiper-pagination-bullet {
-    width: 75rem;
-    height: 2rem;
-    vertical-align: middle;
+    
+    width: 250px !important;
+    height: 40px !important;
+    
     font-style: italic;
     text-align: center;
     font-size: 36px;
-    position: relative;
-    top: 100px !important; /*This number needs to be changed if more events are added. */
     color: white;  /* color of text */
     background-color: transparent; /* color of bullet */
     border: none;
@@ -702,6 +702,8 @@ h4 {
 .swiper-pagination-bullet-active{
     color: var(--color-main-light);   /* color of text */
     border: none;
+    width: 250px !important;
+    height: 50px !important;
 }
 
 /*Footer*/
