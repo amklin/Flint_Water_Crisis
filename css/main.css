@@ -363,10 +363,20 @@ h4 {
     font-size: 15px !important;
 }
 
+.bg2 {
+    color: var(--color-main-light) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.bg2 p{
+    margin:7px 0;
+    font-size: 15px !important;
+}
+
 /*Solution Text Content*/
 .textcontent{
     width:60%;
-    background-color: rgb(0,0,0,.7);
+    background-color: rgb(0,0,0,.75);
     padding: 50px;
     border:2px solid transparent;
     height:100%;
@@ -383,6 +393,47 @@ h4 {
     font-size: 30px;
 }
 
+.textcontent-2{
+    width:60%;
+    background-color: rgb(0,0,0,.75);
+    padding: 50px;
+    border:2px solid transparent;
+    height:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.textcontent-2 h5{
+    position:relative;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.background{
+    height:690px !important;
+}
+
+.background .textcontent-3 {
+    width:70%;
+    height: 650px;
+}
+
+.textcontent-3{
+    width:60%;
+    background-color: rgb(0,0,0,.75);
+    padding: 50px;
+    border:2px solid transparent;
+    height:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 20px auto;
+}
+
 /*Most Permanent Solution Container*/
 .randomcontainer {
     height: 100%;
@@ -391,6 +442,15 @@ h4 {
     justify-content: center;
     align-items: center;
     height:550px;
+}
+
+.randomcontainer-2 {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
 }
 
 /*Replace Pipe Slide/Item*/
@@ -414,6 +474,51 @@ h4 {
     justify-self:center;
 }
 
+/*Restoring Faith Slide/Item*/
+#restoringfaith {
+    background-image: url('/img/flintgov.jpeg');
+}
+#restoringfaith h5 {
+    margin: 0px 0 15px;
+}
+#mistrust{
+    overflow:hidden;
+}
+
+#lead {
+    background-image: url('/img/lead.jpg');
+}
+#lead h5 {
+    margin: 0px 0 15px;
+}
+
+#savingmoney {
+    background-image: url('/img/money.jpg');
+}
+
+.colorlink {
+    color:rgb(121, 183, 204);
+}
+.colorlink:hover {
+    color:rgb(42, 42, 231);
+}
+
+.whyitmatters {
+    height:600px !important;
+}
+
+.whyitmatters .textcontent-3 {
+    height:560px;
+}
+
+#flintriver {
+    background-image: url('/img/riverfire.jpg')
+}
+
+.background {
+    width: 100% !important;
+}
+
 /*Carousel Container*/
 .carousel {
     margin:0;
@@ -423,7 +528,6 @@ h4 {
     align-self:center;
     padding:0;
     margin:20px 0;
-    height:500px !important;
     width:85vw;
     max-width: 1000px;
     box-sizing: border-box;
@@ -438,6 +542,12 @@ h4 {
     box-sizing: border-box;
 }
 
+.solutions{
+    height:500px;
+}
+
+
+
 /*Water Bottle Slide*/
 #waterbottle{
     background-image: url('/img/waterbottles.jpg');
@@ -445,6 +555,14 @@ h4 {
 #waterbottle h5{
     margin: 60px 0 25px;
 }
+
+#faith{
+    background-image: url('/img/waterbottles.jpg');
+}
+#faith h5{
+    margin: 5px 0;
+}
+
 
 /*Home Filtration Slide*/
 #homefiltration {
@@ -461,6 +579,19 @@ h4 {
 #law h5 {
     margin: 75px 0 25px;
 }
+
+#theissue {
+    background-image: url('/img/pollution.jpg');
+}
+#theissue h5 {
+    margin: 0px 0 10px;
+}
+
+#whatistheissue {
+    background-image: url('/img/river.jpg');
+}
+
+
 
 /*Buttons for Shifting Carousel*/
 
@@ -496,12 +627,12 @@ h4 {
 }
 
 /*Left Buttons Shifted Left*/
-#left-1, #left-2, #left-3 {
+#left-1, #left-2, #left-3, #left-4, #left-5 {
     left:0;
 }
 
 /*Right Buttons Shifted Right*/
-#right-1, #right-2, #right-3 {
+#right-1, #right-2, #right-3, #right-4, #right-5 {
     right:0;
 }
 
@@ -558,7 +689,7 @@ h4 {
 
 /*Timeline*/
 .timeline-container{
-    height: 500px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -572,18 +703,28 @@ h4 {
     box-shadow: 0 5px 25px 5px rgba(0, 0, 0, .2);
 }
 
+.up {
+    z-index:20;
+    color:white;
+    position:absolute;
+    top: -70px;
+    width:100%;
+    text-align:center;
+    font-size:100px !important;
+}
+
 .down{
     z-index:20;
     color:white;
     position:absolute;
-    bottom:50px;
+    bottom: -45px;
     width:100%;
     text-align:center;
     font-size:100px !important;
 }
 
 .swiper {
-    height: 500px;
+    height: 550px;
     width: 100%;
     position: relative;
 }
@@ -600,6 +741,8 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display:flex;
+    align-items:center;
   }
 
 /* creates dark gradient in semicircle on right side */
@@ -639,7 +782,6 @@ h4 {
     width: 80%;
     max-width: 600px;
     right: 50%;
-    top: 13%;
     transform: translate(50%, 0);
     font-size: 18px;
     z-index: 2;
@@ -660,7 +802,7 @@ h4 {
 }
   
  .swiper-slide .timeline-title {
-    font-size: 34px;
+    font-size: 25px;
     font-weight: 200;
     margin: 0 0 30px;
     transition: 0.2s ease 0.5s;
@@ -768,4 +910,62 @@ footer {
     .form-sign {
         width:70%;
     }
+}
+
+
+#waste{
+    all:revert;
+    list-style-type: square;
+}
+
+.textcontent-3 img {
+    margin: 15px 0;
+    max-width:450px;
+    float:center;
+    align-self:center;
+}
+
+.embedcontainer iframe {
+    all:revert;
+    width:100%;
+    -moz-transform: scale(0.5, 0.5); 
+    -webkit-transform: scale(0.5, 0.5); 
+    -o-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5); 
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    height:300px;
+    border:0px;
+    margin-top:5px;
+}
+
+.embedcontainer {
+    position:relative;
+    width: 100%;
+    margin:10px;
+    height:125px;
+    padding:0 !important;
+    box-sizing: border-box;
+}
+
+.embedcontainer p{
+    width:45%;
+    position:absolute;
+    right:0;
+    top:0;
+    text-align:left;
+    line-height: 1.35;
+}
+
+#obama{
+    margin-top:20px;
+}
+
+ul {
+    all:revert;
+    list-style-type: circle;
 }

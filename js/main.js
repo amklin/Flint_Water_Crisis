@@ -125,6 +125,12 @@ $(document).ready(function () {
     carouselButton('#left-3', '.solutions', 'prev');  //Therapy games carousel left button
     carouselButton('#right-3', '.solutions', 'next');  //Therapy games carousel right button
 
+    carouselButton('#left-4', '.whyitmatters', 'prev');  //Therapy games carousel left button
+    carouselButton('#right-4', '.whyitmatters', 'next');  //Therapy games carousel right button
+
+    carouselButton('#left-5', '.background', 'prev');  //Therapy games carousel left button
+    carouselButton('#right-5', '.background', 'next');  //Therapy games carousel right button
+
     /*Function for shifting carousel*/
     function carouselButton(button, carousel, movement) {
         $(button).on('click', () => {
