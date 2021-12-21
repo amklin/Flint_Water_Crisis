@@ -71,7 +71,11 @@ a {
 .bg-img-main {
     --bg-img: url('/img/main-img-1.jpg');
     background-image: var(--bg-img);
-    transition-duration: 0.3s;
+}
+
+.bg-img-sol {
+    --bg-img: url('/img/flintpipes.jpg');
+    background-image: var(--bg-img);
 }
 
 /*Darker Layer Over Background Image on Home Page*/
@@ -325,11 +329,14 @@ aside {
 
 /*Labels Above Carousels*/
 h4 {
-    background-color: var(--color-medium);
     color: whitesmoke;
-    border: 5px solid var(--color-main-dark);
-    margin:10px 2% 0;
+    background-color: rgb(0, 93, 199);
+    /*Alternate color (i think the other one looks better tho)
+        background-color: rgb(199, 129, 0);*/
+    margin:20px 2% 0;
     padding:10px;
+    text-transform: uppercase;
+    font-size: 40px;
    
     text-align: center;
 }
@@ -344,7 +351,67 @@ h4 {
     z-index:-1;
 }
 
-/*General Carousel Styles*/
+/*Solution Styles*/
+.solution {
+    color: var(--color-main-light) !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.solution p{
+    margin:7px 0;
+    font-size: 15px !important;
+}
+
+/*Solution Text Content*/
+.textcontent{
+    width:60%;
+    background-color: rgb(0,0,0,.7);
+    padding: 50px;
+    border:2px solid transparent;
+    height:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.textcontent h5{
+    position:relative;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/*Most Permanent Solution Container*/
+.randomcontainer {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:550px;
+}
+
+/*Replace Pipe Slide/Item*/
+#replacepipes{
+    width: 800px;
+    max-width:95%;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url('/img/pipes.jpg');
+}
+#replacepipes h5 {
+    margin: 0px 0 25px;
+}
+#pipe {
+    width:70%;
+    min-width: 400px;
+    height: fit-content;
+    align-self:center;
+    justify-self:center;
+}
 
 /*Carousel Container*/
 .carousel {
@@ -354,59 +421,52 @@ h4 {
     align-items: center;
     align-self:center;
     padding:0;
-    margin:10px 0;
-    height:550px !important;
+    margin:20px 0;
+    height:500px !important;
     width:85vw;
+    max-width: 1000px;
     box-sizing: border-box;
 }
 
-/*Carousel Item Styles*/
+/*Carousel Items*/
 .carousel-item{
     all:revert;
 
     position:relative;
     border:none;
     box-sizing: border-box;
-    
-    background-size:cover;
-    color: var(--color-main-light);
 }
 
+/*Water Bottle Slide*/
 #waterbottle{
     background-image: url('/img/waterbottles.jpg');
 }
+#waterbottle h5{
+    margin: 60px 0 25px;
+}
 
-.solution p{
-    margin:7px 0;
-    font-size: 15px !important;
+/*Home Filtration Slide*/
+#homefiltration {
+    background-image: url('/img/homefiltrationsystem.jpeg');
+}
+#homefiltration h5{
+    margin: 5px 0;
+}
+
+/*Legislative Measures Slide*/
+#law {
+    background-image: url('/img/law.jpg');
+}
+#law h5 {
+    margin: 75px 0 25px;
 }
 
 /*Buttons for Shifting Carousel*/
 
-.textcontent{
-    width:60%;
-    background-color: rgb(0,0,0,.6) !important;
-    padding: 50px;
-    border:2px solid transparent;
-    height:100%;
-    box-sizing: border-box;
-    display:flex;
-    flex-direction: column;
-}
-
-.textcontent h5{
-    position:relative;
-    align-self: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-    margin: 75px 0 25px;
-}
-
 /*Div Containing Buttons*/
 .carousel-btns {
     position:relative;
-    top:230px;
+    top:210px;
     z-index:15;
 
     display:flex;
@@ -493,135 +553,6 @@ h4 {
 .page-title em {
     font-size:18px;
     font-weight:100;
-}
-
-/*Articles*/
-
-/*Images on Article Pages*/
-.artimage{
-    display:block;
-    width: 60vw;
-    margin: 40px auto;
-}
-
-/*Articles are Centered*/
-article {
-    margin: 20px auto 50px;
-    width: 60vw;
-}
-
-/*Article Paragraphs, including Font Style that Slightly Differs from Rest of Site*/
-article p{
-    display:block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
-}
-
-/*Mental Health Resources Article*/
-
-/*Resources Container*/
-.resources-list{
-    display:block;
-}
-
-/*Individual Resource Links*/
-.resources-list a{
-    text-decoration:none;
-    color:var(--color-main-dark);
-}
-
-/*Resource Links Brighten on Hover*/
-.resources-list a:hover{
-    color:rgb(20, 116, 180);
-    transition:0.3s;
-}
-
-/*Resource Descrptions*/
-.artr{
-    display:block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 10px 0 30px;
-}
-
-/*Games*/
-
-/*Container for Game Itself and Start Game Layer*/
-.game-container {
-    position:relative;
-    margin: 20px auto;
-    width:fit-content;
-    height:fit-content;
-}
-
-/*Embedded Game Container to Create Dark Blue Background and Drop Shadow*/
-.game-main {
-    position:relative;
-    padding: 2%;
-    width:fit-content;
-    height:fit-content;
-    background-color: var(--color-dark-shade);
-    border-radius:5%;
-}
-
-/*Embedded Game*/
-iframe{
-    display: block;
-    box-sizing: content-box;
-    height: 600px;
-    width: 500px;
-    max-width:600px;
-    border-radius:3.5%;
-}
-
-/*Width and Height of Snake Game*/
-.snake {
-    width:450px;
-    height:504px;
-}
-
-/*Start Game*/
-
-/*Start Game Layer*/
-.game-layer {
-    position:absolute;
-    
-    border-radius:5%;
-    height:100%;
-    width:104%;
-    z-index:10;
-
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
-    
-    background-color: var(--color-dark-shade);
-    color: var(--color-main-light);
-}
-
-/*Start Button on Start Game Layer*/
-.start-button {
-    display:block;
-    color:white;
-    text-align:center;
-    padding:3% 8%;
-    border: 3px solid white;
-    background-color: var(--color-semi-transparent);
-}
-
-/*Game Instructions on Start Game Layer*/
-
-/*"Instructions" Title*/
-.game-layer em{
-    font-size: 20px;
-    font-weight:bolder;
-}
-
-/*Instructions Steps*/
-.game-layer p{
-    font-weight: thin;
-    padding: 0 10%;
-    text-align: center;
 }
 
 /*Timeline*/
@@ -788,7 +719,6 @@ footer {
     position:relative;
 }
 
-/*Sign In and Sign Up Page Footers are at the Bottom of the Window*/
 .footer-fixed {
     position:fixed;
     bottom:0;
@@ -821,15 +751,5 @@ footer {
     /*Form Width*/
     .form-sign {
         width:70%;
-    }
-
-    /*Inspirational Quote Font Size*/
-    aside {
-        font-size: 5vw;
-    }
-
-    /*Article Content Width*/
-    .artimage, article {
-        width:70vw;
     }
 }

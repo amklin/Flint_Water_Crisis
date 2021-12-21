@@ -18,19 +18,10 @@ $(document).ready(function () {
     /*Nav Bar Buttons*/
 
     /*All nav bar buttons/elements change styles on hover*/
-    changeButtonOnHover('.sign-in');
-    changeButtonOnHover('.sign-up');
+    changeButtonOnHover('.time');
+    changeButtonOnHover('.sol');
+    changeButtonOnHover('.home');
     changeButtonOnHover('.return');
-    changeButtonOnHover('.title-links');
-    changeButtonOnHover('.title-ment');
-    changeButtonOnHover('.title-ther');
-    changeButtonOnHover('.twenforate');
-    changeButtonOnHover('.food-snake');
-    changeButtonOnHover('.matching');
-    changeButtonOnHover('.mood-tracker');
-    changeButtonOnHover('.resources');
-    changeButtonOnHover('.importance');
-    changeButtonOnHover('.effects');
 
     /*Function for changing button appearance on hover*/
     function changeButtonOnHover(button) {
