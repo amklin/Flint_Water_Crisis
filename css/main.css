@@ -660,6 +660,7 @@ iframe{
     background-position: center center;
   }
 
+/* creates dark gradient in semicircle on right side */
 .swiper-slide::after {
     content: "";
     position: absolute;
@@ -669,16 +670,16 @@ iframe{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
-    box-shadow: -230px 0 150px 60vw rgba(0, 0, 0, .7);
+    box-shadow: -230px 0 150px 70vw rgba(0, 0, 0, .7);
     border-radius: 100%;
 } 
 
 .slide-1 {
-    background-image: url('/img/main-img-1.jpg');
+    background-image: url('/img/snyder.jpg');
 }
 
 .slide-2 {
-    background-image: url('/img/waterbottles.jpg');
+    background-image: url('/img/sink.jpg');
 }
 
 .slide-3 {
@@ -715,6 +716,7 @@ iframe{
   
  .swiper-slide .timeline-title {
     font-size: 34px;
+    font-weight: 200;
     margin: 0 0 30px;
     transition: 0.2s ease 0.5s;
 }
@@ -743,7 +745,7 @@ iframe{
     flex-direction: column;
     justify-content: center;
     width: 50rem !important;
-    height: 100% !important;
+    height: 100% !important; 
 }
 
 
@@ -755,13 +757,15 @@ iframe{
     text-align: center;
     font-size: 36px;
     position: relative;
-    top: 100px !important;
+    top: 100px !important; /*This number needs to be changed if more events are added. */
     color: white;  /* color of text */
     background-color: transparent; /* color of bullet */
+    border: none;
 }
 
 .swiper-pagination-bullet-active{
     color: var(--color-main-light);   /* color of text */
+    border: none;
 }
 
 

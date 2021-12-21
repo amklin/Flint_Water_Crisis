@@ -1,5 +1,3 @@
-var menu = ['2014', 'Sept 2015', '2016', '2017'] //timeline dates
-
 var timelineSwiper = new Swiper('.swiper', {
   direction: 'vertical',
   loop: false,
@@ -13,7 +11,8 @@ var timelineSwiper = new Swiper('.swiper', {
     dynamicBullets: true,
     dynamicMainBullets: 1,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (menu[index]) + '</span><br>';
+      var date = document.getElementsByClassName('timeline-year')[index].textContent; //retrieves dates based on html content
+      return '<span class="' + className + '">' + date + '</span><br>';
     },
   },
 
@@ -38,11 +37,5 @@ var timelineSwiper = new Swiper('.swiper', {
     stretch: 2,
   },
 
-  /*
-  paginationBulletRender: function (swiper, index, className) {
-    var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-    return '<span class="' + className + '">' + year + '</span>';
-  },
-  */
   centeredSlides: true,
 });
