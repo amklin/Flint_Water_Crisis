@@ -632,17 +632,6 @@ h4 {
     background-image: url('/img/waterbottles.jpg');
 }
 
-.slide-5 {
-    background-image: url('/img/main-img-1.jpg');
-}
-
-.slide-6 {
-    background-image: url('/img/snyder-drinking-water.jpg');
-}
-
-.slide-7 {
-    background-image: url('/img/main-img-1.jpg');
-}
 
 .swiper-slide-content {
     position: absolute;
@@ -656,7 +645,7 @@ h4 {
     z-index: 2;
   }
 
-.timeline-year {
+.swiper-slide .timeline-year {
     font-size: 28px;
     transform: translate3d(20px, 0, 0);
     color: #ffffff;
@@ -664,13 +653,13 @@ h4 {
     transition: 0.2s ease 0.4s;
 }
 
-.timeline-line {
+.swiper-slide .timeline-line {
     width: 10px;
     border: 1px solid;
     margin: 10px auto 15px; 
 }
-
-.timeline-title {
+  
+ .swiper-slide .timeline-title {
     font-size: 34px;
     font-weight: 200;
     margin: 0 0 30px;
@@ -725,7 +714,6 @@ h4 {
     border: none;
     width: 250px !important;
     height: 50px !important;
-    border: 0px !important;
 }
 
 /*Footer*/
