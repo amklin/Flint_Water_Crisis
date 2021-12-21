@@ -16,45 +16,52 @@
     <header class="z-depth-2">
         <!--Site Title-->
         <a class="logo" href="index.html">Flint Water Crisis</a>
-
+    
         <nav class="nav-links">
             <!--Links to Home Page-->
             <h5 class="link home"><a href="index.html">Home</a></h5>
-
+    
             <!--Links to Timeline and Solutions Pages-->
             <h5 class="link time"><a href="timeline.html">Timeline</a></h5>
             <h5 class="link sol"><a href="solutions.html">Solutions</a></h5>
-
+    
             <!--Link to Return To Previous Page-->
             <h5 class="link return"><a class="return-link">Return Back</a></h5>
         </nav>
     </header>
-
-    <!--Article Title-->
-    <section class="page-title z-depth-2">
-        <h2>Timeline of the Flint Water Crisis</h2>
+    
+    <!--Background Image and Layer Over Image-->
+    <div class="bg-img bg-img-sol"></div>
+    <div class="layer"></div>
+    
+    <!--Title-->
+    <section id="title-div-s">
+        <h1 class="title">TIMELINE</h1>
     </section>
-    <!--Timeline-->
-    <div class="timeline-container">
-        <div class="timeline">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide-1">
-                        <div class="swiper-slide-content">
-                            <span class="timeline-year">2011</span>
-                            <hr class="timeline-line">
-                            <h4 class="timeline-title">Flint Emergency Manager Appointed</h4>
-                            <p class="timeline-text">Michigan Governor Rick Snyder appoints an emergency manager to cut
-                                costs. At the time, Flint had a $25 million deficit due to decades-long issues with the
-                                declining auto industry.</p>
+    
+    <main class="main-content-s">
+        <!--Timeline-->
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <div class="swiper-slide-content">
+                                <span class="timeline-year">2011</span>
+                                <hr class="timeline-line">
+                                <h4 class="timeline-title">Flint Emergency Manager Appointed</h4>
+                                <p class="timeline-text">Michigan Governor Rick Snyder appoints an emergency manager to cut
+                                    costs. At the time, Flint had a $25 million deficit due to decades-long issues with the
+                                    declining auto industry.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide slide-2">
-                        <div class="swiper-slide-content">
-                            <span class="timeline-year">Apr 16, 2013</span>
-                            <hr class="timeline-line">
-                            <h4 class="timeline-title">Announcement of Water System Switch</h4>
-                            <p class="timeline-text">Flint Emergency Manager Ed Kurtz announces that the city is going to switch from Detroit Water and Sewerage Department (DWSD) and join the Karegnondi Water Authority (KWA). This is supposed to save the city $200 million over 25 years.</p>
+                        <div class="swiper-slide slide-2">
+                            <div class="swiper-slide-content">
+                                <span class="timeline-year">Apr 16, 2013</span>
+                                <hr class="timeline-line">
+                                <h4 class="timeline-title">Announcement of Water System Switch</h4>
+                                <p class="timeline-text">Flint Emergency Manager Ed Kurtz announces that the city is going to switch from Detroit Water and Sewerage Department (DWSD) and join the Karegnondi Water Authority (KWA). This is supposed to save the city $200 million over 25 years.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-3">
@@ -113,17 +120,18 @@
                             <p class="timeline-text">Flint Mayor Karen Weaver declares a state of emergency.</p>
                         </div>
                     </div>
+                    <div class="swiper-pagination swiper-pagination-clickable"></div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
+        <div class="down">&#709;</div>
 
-    <!--Footer-->
-    <footer>
-        <p>&#169; Flint Water Crisis</p>
-        <p>Spencer Lyudovyk, Amanda Lin, Abhilash Bodala</p>
-    </footer>
+        <!--Footer-->
+        <footer>
+            <p>&#169; Flint Water Crisis</p>
+            <p>Spencer Lyudovyk, Amanda Lin, Abhilash Bodala</p>
+        </footer>
+    </main>
 
     <!--Javascript Links-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
