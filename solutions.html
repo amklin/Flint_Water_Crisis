@@ -14,53 +14,24 @@
 <body>
     <!--Header-->
     <header class="z-depth-2">
-        <!--Brealief Logo-->
+        <!--Site Title-->
         <a class="logo" href="index.html">Flint Water Crisis</a>
-    
-        <!--Section of Header with Navigation Links-->
+
         <nav class="nav-links">
-            <!--Dropdown for Navigation Between Pages-->
-            <h5 class="title-links link">Links&nbsp;<span class="arrow-ud">&#11167;</span></h5>
-            <div class="dropdown">
-                <!--Primary Dropdown with Links to Mental Health and Therapy Game Carousels-->
-                <nav class="link primary">
-                    <span class="link title-ment">
-                        <a href="#mental-health">Mental Health Resources <span class="arrow-lr-1">&#11166;</span></a>
-                    </span>
-                    <span class="link title-ther">
-                        <a href="#therapy-games">Therapy Games <span class="arrow-lr-2">&#11166;</span></a>
-                    </span>
-                </nav>
-    
-                <!--Secondary Dropdowns with Links to Individual Pages-->
-                <nav class="link secondary">
-                    <!--Dropdown with Links to Mental Health Resource Pages-->
-                    <nav class="link ment z-depth-3">
-                        <span class="link mood-tracker"><a href="moodtracker.html">Mood Tracker</a></span>
-                        <span class="link resources"><a href="healthresources.html">Resources</a></span>
-                        <span class="link importance"><a href="mentalhealthimportance.html">Importance</a>
-                        </span>
-                        <span class="link effects"><a href="effectsofmentalhealth.html">Effects</a>
-                        </span>
-                    </nav>
-    
-                    <!--Dropdown with Links to Therapy Game Pages-->
-                    <nav class="link ther z-depth-3">
-                        <div class="link matching"><a href="matching.html">Matching</a></div>
-                        <span class="link food-snake"><a href="snake.html">Food Snake</a></span>
-                        <span class="link twenforate"><a href="twenforate.html">2048</a></span>
-                    </nav>
-                </nav>
-            </div>
-    
-            <!--Links to Sign In and Sign Up Pages-->
-            <h5 class="link sign-in"><a href="timeline.html">Timeline</a></h5>
-            <h5 class="link sign-up"><a href="signup.html">Sign Up</a></h5>
+            <!--Links to Home Page-->
+            <h5 class="link home"><a href="index.html">Home</a></h5>
+
+            <!--Links to Timeline and Solutions Pages-->
+            <h5 class="link time"><a href="timeline.html">Timeline</a></h5>
+            <h5 class="link sol"><a href="solutions.html">Solutions</a></h5>
+
+            <!--Link to Return To Previous Page-->
+            <h5 class="link return"><a class="return-link">Return Back</a></h5>
         </nav>
     </header>
     
     <!--Background Image and Layer Over Image-->
-    <div class="bg-img bg-img-main"></div>
+    <div class="bg-img bg-img-sol"></div>
     <div class="layer"></div>
     
     <!--Title-->
@@ -72,19 +43,26 @@
     <main class="main-content-s">
         <!--Mental Health Resources Carousel-->
         <section class="index-main">
-            <div>
-                <h5>Most Permanent Solution: Replacing Pipes</h5>
-                <p>The city can replace all the lead pipes with plastic pipes and replace the contaminated
-                    water with clean water.</p>
-                <p>Experts estimate that doing this would cost at least $1.5 billion, making it the most
-                    expensive solution, as well.</p>
-                <p>However, this would be worth it to ensure the safety of the thousands of Flint citizens,
-                    and it is the most permanent solution to the crisis.</p>
-            </div>
+            <h4>Most Permanent Solution</h4>
 
-            <!--Carousel Anchor for Link in Nav Bar Dropdown (Adjusment for Fixed Header)-->
-            <div id="mental-health"></div>
-        
+            <section class="randomcontainer">
+                <div class="solution" id="replacepipes">
+                    <div class="textcontent" id="pipe">
+                        <h5>Replacing Pipes</h5>
+                        <p>The city can replace all the lead pipes with plastic pipes and replace the contaminated
+                            water with clean water. This is the most permanent solution to the crisis as it directly
+                            addresses its causes.</p>
+                        <p>Experts estimate that doing this would cost at least $1.5 billion, making it the most
+                            expensive solution, as well.</p>
+                        <p>However, this would be worth it to ensure the safety of the thousands of citizens
+                            living in Flint and still dealing with the repercussions of the crisis today.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <br>
+
+        <section class="index-main">
             <!--Carousel Title-->
             <h4>Alternate Solutions</h4>
         
@@ -94,8 +72,9 @@
                 <p class="btn" id="right-3">&#10095;</p>
             </div>
         
-            <!--Carousel with Items (Linked to Other Site Pages)-->
-            <section class="carousel carousel-slider solutions" fullWidth>
+            <!--Carousel with Alternate Solutions-->
+            <section class="carousel carousel-slider solutions">
+                <!--Water Bottle Slide-->
                 <div class="carousel-item solution" id="waterbottle">
                     <div class="textcontent">
                         <h5>Water Bottles</h5>
@@ -107,29 +86,35 @@
                     </div>
                 </div>
 
-                <!--Effects of Mental Health Carousel Item Linked to effmenthealth.html-->
-                <div class="carousel-item solution">
-                    <h5>Home Filtration</h5>
-                    <p>Individuals and families can install filtration systems into their own homes.</p>
-                    <p>The EPA and CDC have already conducted studies and determined that filtered water is safe
-                        to drink. In fact, they have declared that lead levels after filtration are "too low to be tested."</p>
-                    <p>Thus, this would remove heavy metals from water, allowing people to use it.</p>
-                    <p>This solution would give people control over their own water and would limit costs to the city government.</p>
-                    <p>However, this may end up being more expensive overall as each household would have to pay for these systems.
-                        Therefore, while it may not be sustainable in the long term, this could be a temporary solution while
-                        the government takes more drastic steps.</p>
+                <!--Home Filtration Slide-->
+                <div class="carousel-item solution" id="homefiltration">
+                    <div class="textcontent">
+                        <h5>Home Filtration</h5>
+                        <p>Individuals and families can install filtration systems into their own homes.</p>
+                        <p>The EPA and CDC have already conducted studies and determined that filtered water is safe
+                            to drink. In fact, they have declared that lead levels after filtration are "too low to be tested."</p>
+                        <p>Thus, this would remove heavy metals from water, allowing people to use it.</p>
+                        <p>This solution would give people control over their own water and would limit costs to the city government.</p>
+                        <p>However, this may end up being more expensive overall as each household would have to pay for these systems.
+                            Therefore, while it may not be sustainable in the long term, this could be a temporary solution while
+                            the government takes more drastic steps.</p>
+                    </div>
                 </div>
 
-                <div class="carousel-item solution">
-                    <h5>Legislative Measures</h5>
-                    <p>The city government could implement a variety of legislative measures to limit the damage continuing
-                        to be done and to ensure a crisis like this doesn't happen again.</p>
-                    <p>In particular, they should emphasize water quality in policy decisions.</p>
-                    <p>To prevent further worsening of water quality, they could outlaw the dumping of water in waterways,
-                        especially those used for human consumption.</p>
+                <!--Legislative Measures Slide-->
+                <div class="carousel-item solution" id="law">
+                    <div class="textcontent">
+                        <h5>Legislative Measures</h5>
+                        <p>The city government could implement a variety of legislative measures to limit the damage continuing
+                            to be done and to ensure a crisis like this doesn't happen again.</p>
+                        <p>In particular, they should emphasize water quality in policy decisions.</p>
+                        <p>To prevent its further worsening, they could outlaw the dumping of waste in waterways,
+                            especially those used for human consumption.</p>
+                    </div>
                 </div>
             </section>
         </section>
+        <br>
     
         <!--Footer-->
         <footer>
