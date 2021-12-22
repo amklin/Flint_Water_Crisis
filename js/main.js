@@ -86,4 +86,14 @@ $(document).ready(function () {
             $(carousel).carousel(movement);
         });
     }
+
+    changeToCursor('.up');
+    changeToCursor('.down');
+
+    /*Function for changing button appearance on hover*/
+    function changeToCursor(button) {
+        $(button).hover(() => {
+            $(button).css("cursor", "pointer");  //Mouse cursor changes to pointer
+        });
+    }
 });
