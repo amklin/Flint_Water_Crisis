@@ -21,6 +21,7 @@ $(document).ready(function () {
     changeButtonOnHover('.time');
     changeButtonOnHover('.sol');
     changeButtonOnHover('.home');
+    changeButtonOnHover('.bgl');
     changeButtonOnHover('.return');
 
     /*Function for changing button appearance on hover*/
@@ -33,52 +34,6 @@ $(document).ready(function () {
             //Styles reset to original when not hovering
             $(button).removeClass('z-depth-3');
             $(button).css("background-color", 'rgba(0, 0, 0, 0)');
-        });
-    }
-
-    /*Nav Bar Dropdowns*/
-
-    /*Primary and secondary dropdowns initially hidden*/
-    $('.primary').hide();  //Primary dropdown
-    $('.secondary').hide();  //Secondary dropdown
-
-    /*Primary dropdown is displayed if hovering over
-      "Links" title, primary dropdown, and secondary dropdowns*/
-    showGen('.title-links');
-    showGen('.primary');
-    showGen('.secondary');
-
-    /*Function for displaying primary dropdown*/
-    function showGen(element) {
-        $(element).hover(() => {
-            $('.primary').show();  //Primary dropdown is displayed
-            $('.arrow-ud').html("&#11165;");  //Arrow in primary dropdown title is pointed up
-        }, () => {
-            $('.primary').hide();  //Primary dropdown is hidden
-            $('.arrow-ud').html("&#11167;");  //Arrow in primary dropdown title is pointed down
-        });
-    }
-
-    /*Secondary mental health dropdown is displayed if hovering over
-      "Mental Health Resources" title and mental health secondary dropdown*/
-    showSpec('.title-ment', '.ment', '.arrow-lr-1');
-    showSpec('.ment', '.ment', '.arrow-lr-1');
-
-    /*Secondary therapy games dropdown is displayed if hovering over
-      "Therapy Games" title and therapy games secondary dropdown*/
-    showSpec('.title-ther', '.ther', '.arrow-lr-2');
-    showSpec('.ther', '.ther', '.arrow-lr-2');
-
-    /*Function for displaying secondary dropdowns*/
-    function showSpec(hovered, element, arrow) {
-        $(hovered).hover(() => {
-            $('.secondary').show();
-            $(element).show();  //Selected secondary dropdown is shown 
-            $(element).siblings().hide();  //Other secondary dropdown remains hidden
-            $(arrow).html("&#11164;");  //Arrow in secondary dropdown title is pointed left
-        }, () => {
-            $('.secondary').hide();  //Secondary dropdown title is hidden
-            $(arrow).html("&#11166;");  //Arrow in secondary dropdown title is pointed right
         });
     }
 
@@ -106,13 +61,6 @@ $(document).ready(function () {
         fullWidth: true,
         indicators: true
     });
-
-    /*Carousel shifts automatically every 1000 milliseconds (10 seconds)*/
-    //autoplay();
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 10000);
-    }
 
     /*Carousel Buttons Shift Carousels Left and Right*/
 

@@ -78,6 +78,11 @@ a {
     background-image: var(--bg-img);
 }
 
+.bg-img-back {
+    --bg-img: url('/img/bgimgback.jpg');
+    background-image: var(--bg-img);
+}
+
 /*Darker Layer Over Background Image on Home Page*/
 .layer {
     background-color: var(--layer-color);
@@ -102,7 +107,7 @@ header {
     padding:15px;
 
     z-index:20;
-    font-size:1rem;
+    font-size:15px;
     
     display:flex;
     align-items:center;
@@ -165,87 +170,8 @@ nav {
 
 /*Nav Bar Font Size, Weight, and Color*/
 .nav-links a, .nav-links h5 {
-    font-size:1rem;
+    font-size:15px;
     font-weight:100;
-}
-
-/*Dropdown Styles*/
-.dropdown {
-    position:relative;
-    display:flex;
-}
-
-/*Primary Dropdown*/
-.primary {
-    display:inline-flex;
-    flex-direction:column;
-    position:absolute;
-    align-items:flex-end;
-    align-content:flex-end;
-    justify-items:flex-end;
-    justify-content:flex-end;
-    background-color: var(--color-main-dark);
-    top:53px;
-    right:0;
-    height:fit-content;
-    padding:0;
-}
-
-/*Titles of Secondary Dropdowns in Primary Dropdown*/
-
-/*Secondary Dropdown Titles Take Up Full Width of Primary Dropdown*/
-.title-ment, .title-ther {
-    box-sizing:border-box;
-    width:100%;
-    justify-content:flex-end;
-}
-
-/*Mental Health Title */
-.title-ment{
-    padding:10px 10px 5px;
-}
-
-/*Therapy Games Title */
-.title-ther{
-    padding: 5px 10px 10px;
-    width:100%;
-}
-
-/*Secondary Dropdowns*/
-
-/*Secondary Dropdown Container*/
-.secondary {
-    display:inline-flex;
-    flex-direction:column;
-    padding:0;
-}
-
-/*Individual Secondary Dropdowns (Mental Health Resources and Therapy Games)*/
-.ment, .ther {
-    display:inline-flex;
-    flex-direction:column;
-
-    position:absolute;
-    top:53px;
-    left:0;
-
-    height:fit-content;
-    padding:0;
-
-    background-color: var(--color-main-dark);
-    font-size:var(--header-font-size);
-}
-
-/*Offsets Therapy Games Secondary Dropdown to be in Line with Corresponding Title in Primary Dropdown*/
-.ther {
-    top:90px;
-}
-
-/*Links in Dropdowns Take Up Dropdown's Full Width*/
-.resources, .importance, .effects,
-.matching, .food-snake, .twenforate {
-    width: 100%;
-    padding: 2px 6px;
 }
 
 /*Title and Image Choices on Home Page*/
@@ -287,6 +213,8 @@ nav {
     font-size: 7.5vw;
     cursor: pointer;
     text-align:center;
+    font-weight:normal !important;
+    cursor:default;
 }
 
 #down-arrow{
@@ -864,7 +792,7 @@ footer {
     width:100%;
     padding: 1rem;
 
-    font-size:1rem;
+    font-size:15px;
 
     color: var(--color-main-light);
     background-color: var(--color-main-dark);
