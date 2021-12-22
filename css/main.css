@@ -1022,3 +1022,11 @@ footer {
     }
 }
 
+@media only screen and (max-width: 500px){
+    .carousel{
+        width: 95vw;
+    }
+    #fleximg {
+        visibility:hidden;
+    }
+}
