@@ -22,6 +22,7 @@ $(document).ready(function () {
     changeButtonOnHover('.sol');
     changeButtonOnHover('.home');
     changeButtonOnHover('.bgl');
+    changeButtonOnHover('.sor');
     changeButtonOnHover('.return');
 
     /*Function for changing button appearance on hover*/

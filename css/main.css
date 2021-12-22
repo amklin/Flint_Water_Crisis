@@ -900,3 +900,17 @@ footer {
 .car3 {
     top:250px;
 }
+
+.source {
+    color:rgb(204, 228, 236);
+    text-decoration: underline;
+    text-align:center;
+}
+
+#references h5 {
+    margin: 0 0 25px;
+}
+
+#references .textcontent{
+    width:100%;
+}
