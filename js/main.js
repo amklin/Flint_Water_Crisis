@@ -66,10 +66,8 @@ $(document).ready(function () {
     /*Carousel Buttons Shift Carousels Left and Right*/
 
     /*All carousel buttons*/
-    carouselButton('#left-1', '.mental-health', 'prev');  //Mental health carousel left button
-    carouselButton('#right-1', '.mental-health', 'next');  //Mental health carousel right button
-    carouselButton('#left-2', '.therapy-games', 'prev');  //Therapy games carousel left button
-    carouselButton('#right-2', '.therapy-games', 'next');  //Therapy games carousel right button
+    carouselButton('#left-1', '.home-carousel', 'prev');  //Mental health carousel left button
+    carouselButton('#right-1', '.home-carousel', 'next');  //Mental health carousel right button
 
     carouselButton('#left-3', '.solutions', 'prev');  //Therapy games carousel left button
     carouselButton('#right-3', '.solutions', 'next');  //Therapy games carousel right button

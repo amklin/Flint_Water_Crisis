@@ -278,6 +278,8 @@ h4 {
 
     /*Places offset below image choices to still allow for user to click on them*/
     z-index:1;
+
+    height:500px !important;
 }
 
 .home-carousel h4{
