@@ -342,7 +342,7 @@ h4 {
 .textcontent-3{
     width:60%;
     background-color: rgb(0,0,0,.75);
-    padding: 50px;
+    padding: 50px 50px 25px;
     border:2px solid transparent;
     height:100%;
     box-sizing: border-box;
