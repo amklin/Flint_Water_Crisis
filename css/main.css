@@ -288,7 +288,8 @@ h4 {
 
 .home-carousel img{
     display: block;
-    width: 400px;
+    height: 250px;
+    width: auto;
     margin: 20px auto;
     z-index: 2;
 }
