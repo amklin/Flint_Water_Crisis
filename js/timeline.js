@@ -1,5 +1,5 @@
 var timelineSwiper = new Swiper('.swiper', {
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: false,
   speed: 1200,
 
@@ -44,4 +44,10 @@ var timelineSwiper = new Swiper('.swiper', {
   },
 
   centeredSlides: true,
+
+  breakpoints:{
+    1200:{
+      direction: 'vertical',
+    },
+  },
 });

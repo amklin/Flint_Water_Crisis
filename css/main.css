@@ -1032,4 +1032,27 @@ footer {
     #flextext {
         width:100%;
     }
+
+    .up{
+        visibility: hidden;
+    }
+
+    .down{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .swiper-pagination{
+        flex-direction: row;
+        justify-content: center;
+        width: 100vh !important;
+        height: 50px !important; 
+    }
+
+    
+    .swiper-pagination-bullet {
+        width: 75vh !important;
+        height: 36px !important;
+    }
 }
