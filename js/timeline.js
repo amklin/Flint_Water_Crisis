@@ -46,7 +46,7 @@ var timelineSwiper = new Swiper('.swiper', {
   centeredSlides: true,
 
   breakpoints:{
-    700:{
+    1200:{
       direction: 'vertical',
     },
   },
