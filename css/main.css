@@ -102,7 +102,7 @@ header {
     padding:15px;
 
     z-index:20;
-    font-size:15px;
+    font-size:1rem;
     
     display:flex;
     align-items:center;
@@ -165,7 +165,7 @@ nav {
 
 /*Nav Bar Font Size, Weight, and Color*/
 .nav-links a, .nav-links h5 {
-    font-size:15px;
+    font-size:1rem;
     font-weight:100;
 }
 
@@ -360,17 +360,7 @@ h4 {
 }
 .solution p{
     margin:7px 0;
-    font-size: 15px !important;
-}
-
-.bg2 {
-    color: var(--color-main-light) !important;
-    background-size: cover !important;
-    background-position: center !important;
-}
-.bg2 p{
-    margin:7px 0;
-    font-size: 15px !important;
+    font-size: 1rem !important;
 }
 
 /*Solution Text Content*/
@@ -485,6 +475,10 @@ h4 {
     overflow:hidden;
 }
 
+.solution h5 {
+    font-size:1.5rem;
+}
+
 #lead {
     background-image: url('/img/lead.jpg');
 }
@@ -494,6 +488,10 @@ h4 {
 
 #savingmoney {
     background-image: url('/img/money.jpg');
+}
+
+#savingmoney h5, #whatistheissue h5, #flintriver h5 {
+    margin:0 0 20px;
 }
 
 .colorlink {
@@ -866,7 +864,7 @@ footer {
     width:100%;
     padding: 1rem;
 
-    font-size:15px;
+    font-size:1rem;
 
     color: var(--color-main-light);
     background-color: var(--color-main-dark);
@@ -910,12 +908,6 @@ footer {
     .form-sign {
         width:70%;
     }
-}
-
-
-#waste{
-    all:revert;
-    list-style-type: square;
 }
 
 .textcontent-3 img {
@@ -965,7 +957,18 @@ footer {
     margin-top:20px;
 }
 
-ul {
-    all:revert;
-    list-style-type: circle;
+#flintt h5 {
+    margin:5px 0 25px;
+}
+
+.solution h5 {
+    font-weight: 600;
+}
+
+.car2 {
+    top:300px;
+}
+
+.car3 {
+    top:250px;
 }
