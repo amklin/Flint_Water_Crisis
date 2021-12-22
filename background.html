@@ -22,16 +22,18 @@
             <h5 class="link home"><a href="index.html">Home</a></h5>
 
             <!--Links to Timeline and Solutions Pages-->
+            <h5 class="link bgl"><a href="background.html">Background</a></h5>
             <h5 class="link time"><a href="timeline.html">Timeline</a></h5>
             <h5 class="link sol"><a href="solutions.html">Solutions</a></h5>
-
+            <h5 class="link sor"><a href="sources.html">Sources</a></h5>
+            
             <!--Link to Return To Previous Page-->
             <h5 class="link return"><a class="return-link">Return Back</a></h5>
         </nav>
     </header>
 
     <!--Background Image and Layer Over Image-->
-    <div class="bg-img bg-img-sol"></div>
+    <div class="bg-img bg-img-back"></div>
     <div class="layer"></div>
 
     <!--Title-->
@@ -43,10 +45,10 @@
     <main class="main-content-s">
         <section class="index-main">
             <!--Carousel Title-->
-            <h4>The Issue</h4>
+            <h4>The Crisis</h4>
 
             <!--Carousel Left and Right Buttons-->
-            <div class="carousel-btns">
+            <div class="carousel-btns car2">
                 <p class="btn" id="left-5">&#10094;</p>
                 <p class="btn" id="right-5">&#10095;</p>
             </div>
@@ -56,7 +58,7 @@
                 <!--Water Bottle Slide-->
                 <div class="carousel-item solution" id="whatistheissue">
                     <div class="textcontent-3">
-                        <h5>What is the issue?</h5>
+                        <h5>General</h5>
                         <p>The Flint Water Crisis began in 2014 when the city of Flint, Michigan, switched its water supply from Detroit's
                             water system to its own Flint River in an attempt to save money. This water was intended to be used for various
                             functions like everyday amenities and even drinking.</p>
@@ -69,33 +71,47 @@
 
                 <!--Home Filtration Slide-->
                 <div class="carousel-item solution" id="flintriver">
-                    <div class="textcontent-3">
+                    <div class="textcontent-3" id="flintt">
                         <h5>The Flint River</h5>
-                        <p>This crisis does not come as much of a surprise.</p>
+                        <p>This crisis does not come as much of a surprise given the state of the river used.</p>
                         <p>The Flint River, which flows through the city of Flint, has been used for waste disposal for over a century.
-                            People throw both treated and untreated waste into it. This includes:</p>
-                        <ul id="waste">
-                            <li>- Waste from car factories</li>
-                            <li>- Waste from meatpacking plants</li>
-                            <li>- Waste from lumber and paper mills</li>
-                            <li>- Raw sewage from Flint's waste treatment plant</li>
-                            <li>- Agricultural and urban ripoff</li>
-                            <li>- Toxics</li>
-                        </ul>
-                        <p>In fact, there is so much dangerous waste that the Flint River has caught on fire <strong>twice</strong>.</p>
+                            People throw both treated and untreated waste into it.</p>
+                        <div style="display:flex; align-items:center;">
+                            <div style="width:50%; margin-right:20px;">
+                                <p>This waste includes:</p>
+                                <ul>
+                                    <li>- Waste from car factories</li>
+                                    <li>- Waste from meatpacking plants</li>
+                                    <li>- Waste from lumber and paper mills</li>
+                                    <li>- Raw sewage from waste treatment plant</li>
+                                    <li>- Agricultural and urban ripoff</li>
+                                    <li>- Toxins</li>
+                                </ul>
+                            </div>
+                            <img style="width:43%; position:relative; right:0;" src="img/waste.jpg">
+                        </div>
+                        <p>In fact, the Flint River is so polluted that it is believed to have caught fire twice.</p>
+                        <p>Besides just this, the water of the river was inadequately chlorinated, allowing bacteria to thrive.
+                            Its use as a water source led to the third-largest U.S. outbreak of a lethal pneumonia variant called
+                            Legionnaires' disease, killing 12 people and infecting almost 90. However, simply chlorinating the polluted water introduced
+                            carcinogens into the water, further exacerbating the crisis.</p>
                     </div>
                 </div>
                 <div class="carousel-item solution" id="savingmoney">
                     <div class="textcontent-3">
                         <h5>Saving Money</h5>
-                        <p>In the middle of the 1900s, Flint's economy was prospering. As the original home of General Motors, it
-                            housed almost 200,000 people, with many of them working in the car industry.
-                        </p>
+                        <div style="display:flex">
+                            <p style="width:40%;margin-right:30px;">In the middle of the 1900s, Flint's economy was prospering. As the original home of General Motors, it
+                            housed almost 200,000 people, with many of them working in the car industry. This drew in many customers and related businesses to the city,
+                            further increasing its success.
+                            </p>
+                            <img style="width:50%;" src="img/1900sflint.jpg">
+                        </div>
                         <p>However, by the 1980s, this economic boom had settled down. Oil prices and auto imports were rising, causing
-                            automobile plants to close or fire some workers. Many of these people ended up moving away from Flint,
+                            automobile plants to close or lay off some workers. Many of these people ended up moving away from Flint,
                             causing the population to drop to just 100,000 people, many of whom were African American. The city's
                             economy declined, with around 45% of the residents dropping below the poverty line. Almost 1 in every 6
-                            hoomes was abandoned. The city has a $25 million deficit.
+                            hoomes was abandoned. The city had a $25 million deficit.
                         </p>
                         <p>All of this resulted in a desperate attempt by city officials to cut costs, with the final decision being to stop
                             piping treated water from Detroit to its residents. Instead, they opted to temporarily pump water from the Flint River until
@@ -108,15 +124,19 @@
                 <div class="carousel-item solution" id="lead">
                     <div class="textcontent-3">
                         <h5>Lead</h5>
-                        <p>The water in the Flint River is incredibly corrosive. As a result, it essentially carved at the aging pipes
-                            that carried it. Since these pipes were made of lead, much of the lead entered the water and was distributed
+                        <p>The water in the Flint River was incredibly corrosive. As a result, it essentially broke down the aging pipes
+                            that conveyed it. Since these pipes were made of lead, much of the lead entered the water and was distributed
                             to the thousands of homes relying on the water system. 
                         </p>
-                        <p>Lead is a toxic metal, so it can be incredibly harmful to the human body even at low levels. The EPA has even set
+                        <p>Lead is a toxic heavy metal, so it can be incredibly harmful to the human body even at low levels. The EPA has even set
                             the maximum contaminant goal for lead in drinking water to zero due to the devastating effects that it can have.
                         </p>
-                        <img width="70%" src="img/lcrgraph.jpg">
-                        <p>The graph above shows lead levels in Flint's water measured over the years. The issue has definitely lessened, but it still
+                       <p>Some of these effects have manifested in the form of brain damage. This is especially prevalent in children, causing
+                            worse academic performances, reduction in IQ, worsened in problem-solving skills, and even
+                            an increased chance of developing Alzheimer's disease.</p>
+                        <div style="display:flex;align-items:center;">
+                            <img style="width:60%;margin-right:10%;" src="img/lcrgraph.jpg">
+                            <p>This graph shows lead levels in Flint's water measured over the years. As you can see, the issue has definitely lessened, but it still
                             has not gone away entirely.
                         </p>
                     </div>
@@ -130,7 +150,7 @@
             <h4>Why We Care</h4>
         
             <!--Carousel Left and Right Buttons-->
-            <div class="carousel-btns">
+            <div class="carousel-btns car3">
                 <p class="btn" id="left-4">&#10094;</p>
                 <p class="btn" id="right-4">&#10095;</p>
             </div>
@@ -141,17 +161,17 @@
                 <div class="carousel-item solution" id="theissue">
                     <div class="textcontent-3">
                         <h5>It Still Matters</h5>
-                        <p>Several years have passed since the onset of the Flint Water Crisis, and, as of June 2021, just over
+                        <p>Several years have passed since the onset of the Flint water crisis, and, as of June 2021, just over
                             10,000 of Flint's water pipes have been replaced. According to city officials, the city is in the
                             final stage of replacement. However, there is a lot that can be learned from it. 
                         </p>
-                        <p>That's because this isn't the only place were this type of crisis has happened and is happening, and we need 
-                            to be aware of that. In fact, 9 counties nationwide report 10% of tests coming back positive
+                        <p>That's because this isn't the only place where this type of crisis has happened and is happening, and we need 
+                            to be aware of that. In fact, nine counties nationwide report 10% of tests coming back positive
                             for lead poisoning. From Flint, we should learn that this is incredibly dangerous and should
                             be fixed as soon as possible.
                         </p>
                         <p>Many cities, much like Flint originally, are also reporting false results on their water quality
-                            tests. One of the biggest of these is Philadephia. Other cities like St. Joseph, Louisiana, suffer
+                            tests. One of the biggest of these is <a class="colorlink" href="https://www.phillyvoice.com/philadelphia-water-contaminated-chemicals-pfas-environmental-working-group-reports/">Philadephia</a>. Other cities like St. Joseph, Louisiana, suffer
                             from terrible levels of pollution, which also affect both air and water quality.
                         </p>
                         <p>By ignoring these crises like the Flint crisis was originally ignored, we are endangering hundreds
