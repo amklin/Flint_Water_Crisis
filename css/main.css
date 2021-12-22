@@ -526,7 +526,7 @@ h4 {
     background-image: url('/img/law.jpg');
 }
 #law h5 {
-    margin: 75px 0 25px;
+    margin: 65px 0 25px;
 }
 
 #theissue {
@@ -873,7 +873,7 @@ footer {
     background-color: var(--color-main-dark);
 
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-end;
 
     position:relative;
 }
