@@ -271,13 +271,33 @@ h4 {
 }
 
 /*Mental Health Carousel Anchor Just Above Caoursel Label*/
-#mental-health {
+.home-carousel {
     /*Offsets mental health carousel anchor to adjust for fixed header*/
     padding-top:80px;
     margin-top:-80px;
 
     /*Places offset below image choices to still allow for user to click on them*/
-    z-index:-1;
+    z-index:1;
+}
+
+.home-carousel h4{
+    background-color: var(--color-semi-transparent);
+}
+
+.home-carousel img{
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    z-index: 2;
+}
+
+.home-carousel p{
+    display: block;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    width: 70%;
+    margin: 20px auto;
 }
 
 /*Solution Styles*/
