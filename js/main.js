@@ -24,6 +24,7 @@ $(document).ready(function () {
     changeButtonOnHover('.bgl');
     changeButtonOnHover('.sor');
     changeButtonOnHover('.return');
+    changeButtonOnHover('.your-acc');
 
     /*Function for changing button appearance on hover*/
     function changeButtonOnHover(button) {
@@ -92,6 +93,26 @@ $(document).ready(function () {
     function changeToCursor(button) {
         $(button).hover(() => {
             $(button).css("cursor", "pointer");  //Mouse cursor changes to pointer
+        });
+    }
+
+    /*Nav Bar Dropdowns*/
+
+    /*Dropdowns initially hidden*/
+    $('.your-acc-links').hide();  //Your account dropdown
+
+    /*Primary or account dropdown display when hovering over certain elements*/
+    showGen('.your-acc', '.your-acc-links', '.arrow-ud-2');  //Account dropdown displayed if hovering over "Your Account" title
+    showGen('.your-acc-links', '.your-acc-links', '.arrow-ud-2');  //Account dropdown displayed if hovering over account dropdown
+
+    /*Function for displaying primary/account dropdown*/
+    function showGen(element, element2, arrow) {
+        $(element).hover(() => {
+            $(element2).show();  //Primary dropdown is displayed
+            $(arrow).html("&#11165;");  //Arrow in primary dropdown title is pointed up
+        }, () => {
+            $(element2).hide();  //Primary dropdown is hidden
+            $(arrow).html("&#11167;");  //Arrow in primary dropdown title is pointed down
         });
     }
 });
