@@ -760,7 +760,7 @@ h4 {
 } 
 
 .slide-1 {
-    background-image: url('/img/snyder.jpg');
+    background-image: url('/img/snyder-2.jpg');
 }
 
 .slide-2 {
@@ -768,11 +768,63 @@ h4 {
 }
 
 .slide-3 {
-    background-image: url('/img/main-img-1.jpg');
+    background-image: url('/img/pollution.jpg');
 }
 
 .slide-4 {
-    background-image: url('/img/waterbottles.jpg');
+    background-image: url('/img/riverfire.jpg');
+}
+
+.slide-5{
+    background-image: url('/img/doctor.jpg')
+}
+
+.slide-6{
+    background-image: url('/img/snyder-drinking-water.jpg')
+}
+
+.slide-7{
+    background-image: url('/img/report.png')
+}
+
+.slide-8 {
+    background-image: url('/img/money.jpg')
+}
+
+.slide-9 {
+    background-image: url('/img/karen-weaver.jpg');
+}
+
+.slide-10 {
+    background-image: url('/img/resign.jpg');
+}
+
+.slide-11 {
+    background-image: url('/img/snyder.jpg');
+}
+
+.slide-12{
+    background-image: url('/img/panel.jpg');
+}
+
+.slide-13{
+    background-image: url('/img/law.jpg');
+}
+
+.slide-14{
+    background-image: url('/img/lawyer.jpg');
+}
+
+.slide-15{
+    background-image: url('/img/Flint-water-protestors.jpg');
+}
+
+.slide-16{
+    background-image: url('/img/hard-drive.jpg');
+}
+
+.slide-17{
+    background-image: url('/img/snyder-charges.jpg');
 }
 
 
