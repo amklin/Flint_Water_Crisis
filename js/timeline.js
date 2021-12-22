@@ -27,6 +27,12 @@ var timelineSwiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 
+  // navigation with buttons
+  navigation: {
+    nextEl: '.down',
+    prevEl: '.up',
+  },
+
   // transition effects
   effect: 'coverflow',
   coverflowEffect: {
