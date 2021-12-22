@@ -1029,4 +1029,7 @@ footer {
     #fleximg {
         visibility:hidden;
     }
+    #flextext {
+        width:100%;
+    }
 }
